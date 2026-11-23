@@ -1,0 +1,12 @@
+
+body{font-family:Arial,sans-serif;background:#f2f2f2;margin:0}
+.box{width:var(--w,600px);margin:20px auto;padding:20px;background:#fff;border-radius:5px;box-shadow:0 0 10px rgba(0,0,0,.2)}
+.row{display:flex;flex-direction:row;gap:12px;align-items:stretch}
+.col{display:flex;flex-direction:column;gap:12px}
+.num{display:flex;flex-direction:column;gap:4px;font-weight:bold;color:#333}
+.num input{padding:10px;font-size:16px;border:none;border-radius:5px;background:#f9f9f9;box-shadow:inset 0 0 5px rgba(0,0,0,.1)}
+button{padding:10px 20px;font-size:16px;border:none;border-radius:5px;background:#4CAF50;color:#fff;cursor:pointer}
+button:hover{background:#3e8e41}
+.out,.badge{font-size:24px;font-weight:bold;color:#333}
+#editor,#preview{flex:1;height:var(--h,500px);border:1px solid #ccc;border-radius:5px;padding:8px;font-family:monospace;font-size:13px;box-sizing:border-box}
+@media(max-width:640px){.box{width:100%}.row{flex-direction:column}#editor,#preview{height:300px}}
